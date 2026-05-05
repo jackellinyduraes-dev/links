@@ -17,7 +17,7 @@
         }
         .profile-pic {
             width: 120px; height: 120px;
-            border-radius: 50%; border: 3px solid #E6DED1;
+            border-radius: 50%; border: 3px solid #E6DED1; /* Areia */
             margin-bottom: 15px; object-fit: cover;
         }
         .shein-card {
@@ -26,15 +26,27 @@
             width: 100%; max-width: 400px;
             padding: 20px; border-radius: 12px;
             margin-bottom: 20px; box-sizing: border-box;
-            border-left: 8px solid #D68C71; /* Destaque Argila */
+            border-left: 8px solid #D68C71; /* Argila */
+            text-align: center;
         }
         .code-box {
             background: #E6DED1;
-            padding: 10px; border-radius: 5px;
-            font-weight: bold; font-size: 1.2rem;
-            text-align: center; margin: 10px 0;
-            border: 1px dashed #3E5641;
+            padding: 12px; border-radius: 5px;
+            font-weight: bold; font-size: 1.3rem;
+            margin: 10px 0;
+            border: 2px dashed #3E5641;
             cursor: pointer;
+            color: #3E5641;
+        }
+        .shein-link {
+            background-color: #D68C71; /* Botão de destaque em Argila */
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
         }
         .link-button {
             width: 100%; max-width: 400px;
@@ -54,24 +66,33 @@
 
     <img src="perfil.jpg" alt="Jackelliny Ramos" class="profile-pic">
     
+    <h1>Jackelliny Ramos</h1>
+    <p style="text-align: center; margin-bottom: 25px;">ADS Student @FIAP | Maker | Dublin Alumna 🇮🇪[cite: 1]</p>
+
+    <!-- CAIXA SHEIN COM CÓDIGO E LINK -->
     <div class="shein-card">
-        <strong style="color: #D68C71; font-size: 0.8rem; text-transform: uppercase;">🔥 SHEIN Especial</strong>
-        <p style="margin: 5px 0; font-size: 0.9rem;">Pesquise meu código no App para ver minhas escolhas:</p>
+        <strong style="color: #D68C71; font-size: 0.8rem; text-transform: uppercase;">✨ PROMOÇÃO SHEIN</strong>
+        <p style="margin: 8px 0; font-size: 0.9rem;">Toque no código para copiar e use na busca do App:</p>
+        
         <div class="code-box" onclick="copyCode()">H99LC</div>
-        <small style="font-size: 0.7rem; opacity: 0.7;">(Clique no código acima para copiar)</small>
+        
+        <a href="https://br.shein.com" class="shein-link" target="_blank">IR PARA A SHEIN ➔</a>
     </div>
 
-    <a href="https://shopee.com.br/prim3d" class="link-button"> Prim3D </a>
-    <a href="https://www.tiktok.com/@jackieduraes" class="link-button"> TikTok</a>
+    <div style="margin: 10px 0 10px 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #E6DED1;">Minhas Lojas & Curadoria</div>
+    <a href="https://shopee.com.br/prim3d" class="link-button" target="_blank">🛍️ Loja Prim3D (Shopee)</a>
+    <a href="https://www.tiktok.com/@jackieduraes" class="link-button" target="_blank">🎬 Achadinhos no TikTok</a>
+    <a href="https://pin.it/3pDN3PwrC" class="link-button" target="_blank">📌 Curadoria no Pinterest</a>
     
-    <div style="margin: 20px 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #D68C71;">Carreira & Lifestyle</div>
-    <a href="https://www.linkedin.com/in/jackellinyduraes" class="link-button secondary-button">LinkedIn</a>
-    <a href="https://instagram.com/jackellinyduraes" class="link-button secondary-button">Instagram</a>
+    <div style="margin: 20px 0 10px 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #D68C71;">Tech & Pessoal</div>
+    <a href="https://www.linkedin.com/in/jackellinyduraes" class="link-button secondary-button" target="_blank">LinkedIn Profissional</a>
+    <a href="https://github.com/jackellinyduraes-dev" class="link-button secondary-button" target="_blank">Portfólio GitHub</a>
+    <a href="https://instagram.com/jackellinyduraes" class="link-button secondary-button" target="_blank">Instagram Pessoal</a>
 
     <script>
         function copyCode() {
             navigator.clipboard.writeText("H99LC");
-            alert("Código H99LC copiado! Agora é só colar na busca do App SHEIN ✨");
+            alert("Código H99LC copiado! ✨ Agora é só colar na barra de busca da SHEIN.");
         }
     </script>
 </body>
