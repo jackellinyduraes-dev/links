@@ -6,8 +6,8 @@
     <title>Links | Jackelliny Ramos</title>
     <style>
         body {
-            background-color: #E6DED1; /* Areia */
-            color: #1B263B; /* Noite */
+            background-color: #3E5641; /* Verde Oliva/Folha */
+            color: #F7F3F0; /* Off-white para contraste */
             font-family: 'Inter', sans-serif;
             display: flex;
             flex-direction: column;
@@ -17,11 +17,12 @@
         }
 
         .profile-pic {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 3px solid #3E5641; /* Verde Folha */
+            border: 3px solid #E6DED1; /* Areia */
             margin-bottom: 15px;
+            object-fit: cover;
         }
 
         h1 {
@@ -30,13 +31,16 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 5px;
+            text-align: center;
+            color: #E6DED1;
         }
 
         p {
             font-size: 0.9rem;
             margin-bottom: 30px;
             text-align: center;
-            opacity: 0.8;
+            opacity: 0.9;
+            max-width: 300px;
         }
 
         .category-title {
@@ -53,49 +57,50 @@
         .link-button {
             width: 100%;
             max-width: 400px;
-            background-color: #3E5641; /* Verde Folha */
-            color: white;
+            background-color: #E6DED1; /* Areia */
+            color: #1B263B; /* Noite */
             text-decoration: none;
             padding: 15px;
             margin-bottom: 12px;
             border-radius: 8px;
             text-align: center;
-            font-weight: 500;
+            font-weight: 600;
+            box-sizing: border-box;
             transition: transform 0.2s, background-color 0.2s;
+            display: block;
         }
 
         .link-button:hover {
             transform: scale(1.02);
-            background-color: #2D3F2F;
+            background-color: #D68C71; /* Muda para Argila no hover */
+            color: white;
         }
 
         .secondary-button {
             background-color: transparent;
-            border: 2px solid #3E5641;
-            color: #3E5641;
+            border: 2px solid #E6DED1;
+            color: #E6DED1;
         }
     </style>
 </head>
 <body>
 
-    <img src="SUA_FOTO_AQUI.jpg" alt="Jackelliny Ramos" class="profile-pic">
+    <img src="perfil.jpg" alt="Jackelliny Ramos" class="profile-pic">
+    
     <h1>Jackelliny Ramos</h1>
-    <p>Maker | ADS Student | Dublin Alumni 🇮🇪</p>
+    <p>ADS Student @FIAP | Maker | Dublin Alumni 🇮🇪</p>
 
-    <div class="category-title">🛍️ Compras & Achadinhos</div>
-    <a href="LINK_DA_SHOPEE" class="link-button">Loja Prim3D (Shopee)</a>
-    <a href="LINK_SHEIN" class="link-button">Meus Achados SHEIN (Cupom: XXX)</a>
+    <div class="category-title">🛍️ Shopping & Curadoria</div>
+    <a href="https://shopee.com.br/prim3d?entryPoint=ShopBySearch&searchKeyword=prim3d" class="link-button" target="_blank">Loja Prim3D (Shopee)</a>
+    <a href="https://pin.it/3pDN3PwrC" class="link-button" target="_blank">Inspirações no Pinterest</a>
+    <a href="https://www.tiktok.com/@jackieduraes?_r=1&_t=ZS-9677NcWjl9I" class="link-button" target="_blank">TikTok @jackieduraes</a>
 
-    <div class="category-title">🛠️ Universo 3D & Design</div>
-    <a href="https://instagram.com/foundbyjac" class="link-button secondary-button">@foundbyjac</a>
-    <a href="https://tiktok.com/@jackiestor3d" class="link-button secondary-button">@jackiestor3d</a>
+    <div class="category-title">👩🏻‍💻 Carreira & Tecnologia</div>
+    <a href="https://www.linkedin.com/in/jackellinyduraes" class="link-button secondary-button" target="_blank">LinkedIn Profissional</a>
+    <a href="https://github.com/jackellinyduraes-dev" class="link-button secondary-button" target="_blank">Portfólio GitHub (ADS)</a>
 
-    <div class="category-title">🌊 Lifestyle & Daily</div>
-    <a href="https://instagram.com/jackellinyduraes" class="link-button">Instagram Pessoal</a>
-    <a href="https://pinterest.com/jackellinyrduraes" class="link-button">Inspirações no Pinterest</a>
-
-    <div class="category-title">💻 Carreira Tech</div>
-    <a href="LINK_LINKEDIN" class="link-button secondary-button">LinkedIn Professional</a>
+    <div class="category-title">🌊 Lifestyle</div>
+    <a href="https://instagram.com/jackellinyduraes" class="link-button secondary-button" target="_blank">Instagram Pessoal</a>
 
 </body>
 </html>
